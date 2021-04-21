@@ -1,0 +1,50 @@
+@import "./Utils/variables.scss";
+@import "./Utils/mixin.scss";
+ 
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-text sans-serif;
+}
+
+h1, h2, h3{
+    font-family: $font-logo-titre sans-serif;
+}
+
+
+.header{
+    text-align: center;
+    &__logo{
+        max-width: 50%;
+        margin-top: 15px;
+        @media all and (min-width: 500px){
+            max-width: 40%;
+        }
+        @media all and(min-width:768px) {
+            max-width: 30%;
+        }
+    }
+}
+
+.localisation{
+    background-color: $color-fond;
+    text-align: center;
+    &__recherche{
+        background-color: $color-fond-dark;
+        padding: 15px 0;
+        box-shadow: inset 0px 4px darken($color-fond-dark, 5%);
+        &__input{
+            background-color: inherit;
+            border: none;
+        }
+    }
+    &__label{
+        padding: 1.5rem 2rem;
+    }
+    &__button{
+        @include bouton;
+        margin-bottom: 30px;
+    }
+}

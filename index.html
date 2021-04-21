@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">   <!-- Chargement de la police de caractère Shrikhand -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap" rel="stylesheet"> <!-- Chargement de la police de caractère Roboto-->
+    <script src="https://kit.fontawesome.com/c6bd0ff725.js" crossorigin="anonymous"></script> <!-- Script pour charger les icones du site fontawesome-->
+    <link rel="stylesheet" href="style.css">
+    <title>Ohmyfood !</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo">
+    </header>
+
+    <section class="localisation">
+        <form action="#" method="post" class="localisation__form">
+            <div class="localisation__recherche">
+                <i class="fas fa-map-marker-alt"></i><input class="localisation__recherche__input" type="search" name="search" id="search" value="Paris, Belleville">
+            </div>
+            <label for="search">
+                <div  class="localisation__label">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>        
+                </div>
+            </label>
+        </form>
+        <button class="localisation__button">Explorez nos restaurants</button>
+    </section>
+
+    <section class="fontionnement">
+        <h2>Fonctionnement</h2>
+        <div class="fonction">
+            <p><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez votre restaurant</p>
+        </div>
+        <div class="fonction">
+            <p><span>2</span><i class="fas fa-list-ul"></i>Composez votre menu</p>
+        </div>
+        <div class="fonction">
+            <p><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</p>
+        </div>
+    </section>
+</body>
+</html>
