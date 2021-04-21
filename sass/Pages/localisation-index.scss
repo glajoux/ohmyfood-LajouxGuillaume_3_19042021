@@ -1,0 +1,21 @@
+.localisation{
+    background-color: $color-fond;
+    text-align: center;
+    &__recherche{
+        background-color: $color-fond-dark;
+        padding: 15px 0;
+        box-shadow: inset 0px 4px darken($color-fond-dark, 5%);
+        &__input{
+            background-color: inherit;
+            border: none;
+            margin-left: 15px;
+        }
+    }
+    &__label{
+        padding: 1.5rem 2rem;
+    }
+    &__button{
+        @include bouton;
+        margin-bottom: 30px;
+    }
+}

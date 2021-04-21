@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">   <!-- Chargement de la police de caractère Shrikhand -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap" rel="stylesheet"> <!-- Chargement de la police de caractère Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/c6bd0ff725.js" crossorigin="anonymous"></script> <!-- Script pour charger les icones du site fontawesome-->
     <link rel="stylesheet" href="style.css">
     <title>Ohmyfood !</title>
 </head>
 <body>
     <header class="header">
-        <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo">
+        <h1 class="header__logo">ohmyfood</h1>
     </header>
 
     <section class="localisation">
@@ -23,7 +22,7 @@
             </div>
             <label for="search">
                 <div  class="localisation__label">
-                    <h1>Réservez le menu qui vous convient</h1>
+                    <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>        
                 </div>
             </label>
@@ -31,16 +30,16 @@
         <button class="localisation__button">Explorez nos restaurants</button>
     </section>
 
-    <section class="fontionnement">
+    <section class="fonction">
         <h2>Fonctionnement</h2>
-        <div class="fonction">
-            <p><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez votre restaurant</p>
+        <div class="fonction--cadre">
+            <p><span class="fonction__span">1</span><i class="fas fa-mobile-alt fonction__icone"></i>Choisissez votre restaurant</p>
         </div>
-        <div class="fonction">
-            <p><span>2</span><i class="fas fa-list-ul"></i>Composez votre menu</p>
+        <div class="fonction--cadre">
+            <p><span class="fonction__span">2</span><i class="fas fa-list-ul fonction__icone"></i>Composez votre menu</p>
         </div>
-        <div class="fonction">
-            <p><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</p>
+        <div class="fonction--cadre">
+            <p><span class="fonction__span">3</span><i class="fas fa-store fonction__icone"></i>Dégustez au restaurant</p>
         </div>
     </section>
 </body>

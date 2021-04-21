@@ -1,32 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto" sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: "Shrikhand" sans-serif;
-}
-
-.header {
-  text-align: center;
-}
-.header__logo {
-  max-width: 50%;
-  margin-top: 15px;
-}
-@media all and (min-width: 500px) {
-  .header__logo {
-    max-width: 40%;
-  }
-}
-@media all and (min-width: 768px) {
-  .header__logo {
-    max-width: 30%;
-  }
-}
-
 .localisation {
   background-color: #F6F6F6;
   text-align: center;
@@ -39,18 +10,66 @@ h1, h2, h3 {
 .localisation__recherche__input {
   background-color: inherit;
   border: none;
+  margin-left: 15px;
 }
 .localisation__label {
   padding: 1.5rem 2rem;
 }
 .localisation__button {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9256dc);
   border: none;
   height: 2.5rem;
   color: white;
   border-radius: 25px;
   padding: 0 15px;
   margin-bottom: 30px;
+}
+
+.header {
+  text-align: center;
+}
+.header__logo {
+  font-family: "Shrikhand";
+  margin: auto;
+  max-width: 50%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.fonction {
+  width: 90%;
+  margin: auto;
+  box-sizing: content-box;
+}
+.fonction--cadre {
+  background-color: #F6F6F6;
+  height: 3rem;
+  text-align: center;
+  border-radius: 25px;
+  margin: 20px 0;
+  display: flex;
+  z-index: 1;
+}
+.fonction--cadre:hover {
+  background-color: rgba(147, 86, 220, 0.15);
+  /* A modifier car ralenti la page*/
+}
+.fonction__span {
+  background-color: #9256dc;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.45rem;
+  color: white;
+}
+.fonction__icone {
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  color: #9256dc;
 }
 
 /*# sourceMappingURL=style.css.map */

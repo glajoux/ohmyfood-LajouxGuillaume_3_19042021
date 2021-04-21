@@ -1,50 +1,38 @@
 @import "./Utils/variables.scss";
 @import "./Utils/mixin.scss";
- 
-
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font-text sans-serif;
-}
-
-h1, h2, h3{
-    font-family: $font-logo-titre sans-serif;
-}
+@import "./Pages/localisation-index.scss";
+@import "./Layout/header.scss";
+@import "./Base/base.scss";
 
 
-.header{
-    text-align: center;
-    &__logo{
-        max-width: 50%;
-        margin-top: 15px;
-        @media all and (min-width: 500px){
-            max-width: 40%;
-        }
-        @media all and(min-width:768px) {
-            max-width: 30%;
+
+.fonction{
+    width: 90%;
+    margin: auto;
+    box-sizing: content-box;
+    &--cadre{
+        background-color: $color-fond;
+        height: 3rem;
+        text-align: center;
+        border-radius: 25px;
+        margin: 20px 0;
+        display: flex;
+        z-index: 1;
+        &:hover{
+            background-color: $color-prim-opacity;   /* A modifier car ralenti la page*/
         }
     }
-}
 
-.localisation{
-    background-color: $color-fond;
-    text-align: center;
-    &__recherche{
-        background-color: $color-fond-dark;
-        padding: 15px 0;
-        box-shadow: inset 0px 4px darken($color-fond-dark, 5%);
-        &__input{
-            background-color: inherit;
-            border: none;
-        }
+    &__span{
+        background-color: $color-prim;
+        border-radius: 50%;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.45rem;
+        color: white;
     }
-    &__label{
-        padding: 1.5rem 2rem;
-    }
-    &__button{
-        @include bouton;
-        margin-bottom: 30px;
+    &__icone{
+        margin-left: 1rem;
+        margin-right: 1.5rem;
+        color: $color-prim;
     }
 }
