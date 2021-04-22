@@ -19,7 +19,7 @@
         display: flex;
         z-index: 1;
         &:hover{
-            background-color: $color-prim-opacity;   /* A modifier car ralenti la page*/
+            background-color: $color-prim-opacity;/* A modifier car ralenti la page*/
         }
     }
 
@@ -33,6 +33,6 @@
     &__icone{
         margin-left: 1rem;
         margin-right: 1.5rem;
-        color: $color-prim;
+        color: darken($color-fond-dark, 40%);
     }
 }
