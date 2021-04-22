@@ -11,8 +11,8 @@
     <title>Ohmyfood !</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__logo">ohmyfood</h1>
+    <header id="entete">
+        <h1 class="logo">ohmyfood</h1>
     </header>
 
     <section class="localisation">
@@ -20,11 +20,9 @@
             <div class="localisation__recherche">
                 <i class="fas fa-map-marker-alt"></i><input class="localisation__recherche__input" type="search" name="search" id="search" value="Paris, Belleville">
             </div>
-            <label for="search">
-                <div  class="localisation__label">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>        
-                </div>
+            <label for="search" class="localisation__label">
+                    <span class="localisation__label__titre">Réservez le menu qui vous convient</span> <br>
+                    <span class="localisation__label__para">Découvrez des restaurants d'exception sélectionnés par nos soins.</span>        
             </label>
         </form>
         <button class="localisation__button">Explorez nos restaurants</button>
@@ -106,7 +104,7 @@
             <li class="footer__puce"><a href="#"><i class="fas fa-utensils footer__icone"></i> Proposer un restaurant</a></li>
             <li class="footer__puce"><a href="#"><i class="fas fa-hands-helping footer__icone"></i>Devenir partenaire</a></li>
             <li class="footer__puce"><a href="#">Mentions légales</a></li>
-            <li class="footer__puce"><a href="mailto: ohmyfood@test.fr">Contact</a></li>
+            <li class="footer__puce"><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
         </ul>
     </footer>
 </body>
