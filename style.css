@@ -53,11 +53,23 @@ body {
   border-radius: 25px;
   margin: 20px 0;
   display: flex;
+  position: relative;
   z-index: 1;
 }
-.fonction--cadre:hover {
+.fonction--cadre:hover::before {
+  opacity: 1;
+}
+.fonction--cadre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
   background-color: rgba(147, 86, 220, 0.15);
-  /* A modifier car ralenti la page*/
+  z-index: -1;
+  border-radius: 25px;
 }
 .fonction__span {
   background-color: #9256dc;

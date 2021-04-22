@@ -17,12 +17,26 @@
         border-radius: 25px;
         margin: 20px 0;
         display: flex;
+        position: relative;
         z-index: 1;
         &:hover{
-            background-color: $color-prim-opacity;/* A modifier car ralenti la page*/
+            &::before{
+                opacity: 1;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            background-color: $color-prim-opacity;
+            z-index: -1;
+            border-radius: 25px;
         }
     }
-
     &__span{
         background-color: $color-prim;
         border-radius: 50%;
