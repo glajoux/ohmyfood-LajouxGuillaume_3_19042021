@@ -209,4 +209,122 @@ body {
   margin: auto;
 }
 
+.fond__img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.entree {
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+}
+.entree__h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.entree__description {
+  display: flex;
+  justify-content: space-between;
+}
+.entree__description__note {
+  font-size: 0.8rem;
+}
+.entree__description__prix {
+  font-weight: bold;
+  text-align: right;
+}
+
+.plat {
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+}
+.plat__h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.plat__description {
+  display: flex;
+  justify-content: space-between;
+}
+.plat__description__note {
+  font-size: 0.8rem;
+}
+.plat__description__prix {
+  font-weight: bold;
+  text-align: right;
+}
+
+.dessert {
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+}
+.dessert__h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.dessert__description {
+  display: flex;
+  justify-content: space-between;
+}
+.dessert__description__note {
+  font-size: 0.8rem;
+}
+.dessert__description__prix {
+  font-weight: bold;
+  text-align: right;
+}
+
+.main {
+  background-color: #F6F6F6;
+  position: relative;
+  top: -3rem;
+  border-radius: 25px 25px 0 0;
+}
+.main__h1 {
+  font-family: "Shrikhand";
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+.main__h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+  width: 90%;
+  margin: 20px auto;
+}
+.main__h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  border-bottom: 2px solid #99e2d0;
+  padding-top: 1px;
+}
+.main__bouton {
+  display: block;
+  margin: auto;
+  background: linear-gradient(#FF79DA, #9256dc);
+  border: none;
+  height: 2.5rem;
+  color: white;
+  border-radius: 25px;
+  padding: 0 15px;
+}
+
 /*# sourceMappingURL=style.css.map */

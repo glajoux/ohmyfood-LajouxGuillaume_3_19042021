@@ -7,5 +7,25 @@
 @import "./Pages/restaurant-index.scss";
 @import "./Layout/footer.scss";
 @import "./Pages/header-index.scss";
+@import "./Composants/image-fond.scss";
+@import "./Composants/menu.scss";
 
+
+.main{
+    background-color: $color-fond;
+    position: relative;
+    top: -3rem;
+    border-radius: 25px 25px 0 0;
+    &__h1{
+        @include h1;
+    }
+    &__h2{
+        @include h2;
+        }
+    &__bouton{
+        display: block;
+        margin: auto;
+       @include bouton; 
+    }
+}
 
