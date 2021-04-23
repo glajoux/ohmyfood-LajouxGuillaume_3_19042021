@@ -39,6 +39,7 @@
     border-radius: 15px;
     padding: 0.5rem;
     margin-bottom: 20px;
+    @include shadow-box;
     
     &__h2{
         font-size: 1rem;
@@ -56,7 +57,7 @@
         &__prix{
             font-weight: bold;
             text-align: right;
-            width: 20%;
+            width: 30%;
         }
     }
 }
@@ -69,4 +70,27 @@
     bottom: 0;
     left: 0;
     opacity: 0;
+}
+
+@mixin shadow-box{
+    box-shadow: -2px -2px 2px 0px $color-fond-dark, 
+                2px -2px 2px 0px $color-fond-dark, 
+                2px 2px 2px 0px $color-fond-dark, 
+                -2px 2px 2px 0px $color-fond-dark;
+}
+
+@mixin shadow-box-hover{
+    box-shadow: -2px -2px 2px 1px $color-fond-dark, 
+                2px -2px 2px 1px $color-fond-dark, 
+                2px 2px 2px 1px $color-fond-dark, 
+                -2px 2px 2px 1px $color-fond-dark;
+}
+
+@mixin animation-menu{
+    animation: menu  $duree-anim-menu ease-in-out backwards;
+    @for $i from 1 through $num-plat {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
 }

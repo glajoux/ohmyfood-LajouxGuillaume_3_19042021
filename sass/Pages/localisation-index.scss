@@ -16,7 +16,7 @@
         }
     }
     &__label{
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 0;
         &__titre{
             width: 70%;
             display: inline-block;
@@ -27,6 +27,7 @@
         }
         &__para{
             padding-top: 1.5rem;
+            display: inline-block;
             width: 80%;
             margin: auto;
             font-size: 0.9rem;
@@ -35,6 +36,7 @@
     }
     &__button{
         @include bouton;
+        cursor: pointer;
         margin-bottom: 30px;
     }
 }

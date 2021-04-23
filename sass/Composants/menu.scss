@@ -1,11 +1,16 @@
 .entree{
     @include plat;
+    @include animation-menu;
 }
 
 .plat{
     @include plat;
+    @include animation-menu;
 }
 
 .dessert{
     @include plat;
+    @include animation-menu;
 }
+
+

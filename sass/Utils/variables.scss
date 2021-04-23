@@ -2,10 +2,16 @@ $color-prim: #9256dc;
 $color-prim-opacity: rgba(147, 86, 220, 0.15);
 $color-sec: #FF79DA; 
 $color-tert: #99E2D0;
-$color-fond: #F6F6F6;
+$color-fond: hsl(0, 0%, 96%);
 $color-fond-dark: darken($color-fond, 4.6%);
 $color-nouveau: #99e2d0;
 $color-nouveau-dark: darken($color-nouveau, 35%);
 $color-footer: #353535;
 $font-logo-titre: 'Shrikhand';
 $font-text:'Roboto';
+
+
+
+$num-plat: 3;
+$duree-anim-menu : 0.5s;
+$anim-delay: $duree-anim-menu / $num-plat;

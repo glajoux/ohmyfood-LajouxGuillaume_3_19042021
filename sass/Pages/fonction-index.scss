@@ -4,16 +4,19 @@
     box-sizing: content-box;
     &--cadre{
         background-color: $color-fond;
+        @include shadow-box;
         height: 3rem;
         text-align: center;
         border-radius: 25px;
         margin: 20px 0;
+        padding-left: 20px;
         display: flex;
         position: relative;
         z-index: 1;
         &:hover{
             &::before{
                 opacity: 1;
+                @include shadow-box-hover;
             }
         }
         &::before{
@@ -27,6 +30,8 @@
         background-color: $color-prim;
         border-radius: 50%;
         font-size: 0.8rem;
+        position: absolute;
+        left: -8px;
         padding: 0.2rem 0.45rem;
         color: white;
     }
@@ -36,3 +41,6 @@
         color: darken($color-fond-dark, 40%);
     }
 }
+
+
+

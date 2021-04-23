@@ -1,15 +1,33 @@
+@keyframes menu {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
 .localisation {
-  background-color: #F6F6F6;
+  background-color: whitesmoke;
   text-align: center;
 }
 .localisation__form {
   margin-bottom: 30px;
 }
 .localisation__recherche {
-  background-color: #eaeaea;
+  background-color: #e9e9e9;
   padding: 15px 0;
   margin-bottom: 15px;
-  box-shadow: inset 0px 4px #dedede;
+  box-shadow: inset 0px 4px gainsboro;
 }
 .localisation__recherche__input {
   background-color: inherit;
@@ -17,7 +35,7 @@
   margin-left: 15px;
 }
 .localisation__label {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0;
 }
 .localisation__label__titre {
   width: 70%;
@@ -29,6 +47,7 @@
 }
 .localisation__label__para {
   padding-top: 1.5rem;
+  display: inline-block;
   width: 80%;
   margin: auto;
   font-size: 0.9rem;
@@ -40,6 +59,7 @@
   color: white;
   border-radius: 25px;
   padding: 0 20px;
+  cursor: pointer;
   margin-bottom: 30px;
 }
 
@@ -74,17 +94,20 @@ body {
   box-sizing: content-box;
 }
 .fonction--cadre {
-  background-color: #F6F6F6;
+  background-color: whitesmoke;
+  box-shadow: -2px -2px 2px 0px #e9e9e9, 2px -2px 2px 0px #e9e9e9, 2px 2px 2px 0px #e9e9e9, -2px 2px 2px 0px #e9e9e9;
   height: 3rem;
   text-align: center;
   border-radius: 25px;
   margin: 20px 0;
+  padding-left: 20px;
   display: flex;
   position: relative;
   z-index: 1;
 }
 .fonction--cadre:hover::before {
   opacity: 1;
+  box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
 }
 .fonction--cadre::before {
   content: "";
@@ -102,17 +125,19 @@ body {
   background-color: #9256dc;
   border-radius: 50%;
   font-size: 0.8rem;
+  position: absolute;
+  left: -8px;
   padding: 0.2rem 0.45rem;
   color: white;
 }
 .fonction__icone {
   margin-left: 1rem;
   margin-right: 1.5rem;
-  color: #848484;
+  color: #838383;
 }
 
 .restaurant {
-  background-color: #F6F6F6;
+  background-color: whitesmoke;
   padding: 30px 0;
 }
 .restaurant a {
@@ -156,7 +181,7 @@ body {
   flex-direction: column;
   padding-left: 10px;
 }
-.card__nom__icone {
+.card__nom__coeur {
   position: absolute;
   top: 2rem;
   right: 3rem;
@@ -226,6 +251,8 @@ body {
   border-radius: 15px;
   padding: 0.5rem;
   margin-bottom: 20px;
+  box-shadow: -2px -2px 2px 0px #e9e9e9, 2px -2px 2px 0px #e9e9e9, 2px 2px 2px 0px #e9e9e9, -2px 2px 2px 0px #e9e9e9;
+  animation: menu 0.5s ease-in-out backwards;
 }
 .entree__h2 {
   font-size: 1rem;
@@ -244,7 +271,16 @@ body {
 .entree__description__prix {
   font-weight: bold;
   text-align: right;
-  width: 20%;
+  width: 30%;
+}
+.entree--1 {
+  animation-delay: 0.1666666667s;
+}
+.entree--2 {
+  animation-delay: 0.3333333333s;
+}
+.entree--3 {
+  animation-delay: 0.5s;
 }
 
 .plat {
@@ -254,6 +290,8 @@ body {
   border-radius: 15px;
   padding: 0.5rem;
   margin-bottom: 20px;
+  box-shadow: -2px -2px 2px 0px #e9e9e9, 2px -2px 2px 0px #e9e9e9, 2px 2px 2px 0px #e9e9e9, -2px 2px 2px 0px #e9e9e9;
+  animation: menu 0.5s ease-in-out backwards;
 }
 .plat__h2 {
   font-size: 1rem;
@@ -272,7 +310,16 @@ body {
 .plat__description__prix {
   font-weight: bold;
   text-align: right;
-  width: 20%;
+  width: 30%;
+}
+.plat--1 {
+  animation-delay: 0.1666666667s;
+}
+.plat--2 {
+  animation-delay: 0.3333333333s;
+}
+.plat--3 {
+  animation-delay: 0.5s;
 }
 
 .dessert {
@@ -282,6 +329,8 @@ body {
   border-radius: 15px;
   padding: 0.5rem;
   margin-bottom: 20px;
+  box-shadow: -2px -2px 2px 0px #e9e9e9, 2px -2px 2px 0px #e9e9e9, 2px 2px 2px 0px #e9e9e9, -2px 2px 2px 0px #e9e9e9;
+  animation: menu 0.5s ease-in-out backwards;
 }
 .dessert__h2 {
   font-size: 1rem;
@@ -300,11 +349,20 @@ body {
 .dessert__description__prix {
   font-weight: bold;
   text-align: right;
-  width: 20%;
+  width: 30%;
+}
+.dessert--1 {
+  animation-delay: 0.1666666667s;
+}
+.dessert--2 {
+  animation-delay: 0.3333333333s;
+}
+.dessert--3 {
+  animation-delay: 0.5s;
 }
 
 .main {
-  background-color: #F6F6F6;
+  background-color: whitesmoke;
   border-radius: 25px 25px 0 0;
   margin-top: -3.5rem;
   padding-bottom: 0.5rem;
