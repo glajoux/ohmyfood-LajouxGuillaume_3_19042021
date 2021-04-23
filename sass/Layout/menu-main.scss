@@ -1,0 +1,18 @@
+.main{
+    background-color: $color-fond;
+    border-radius: 25px 25px 0 0;
+    margin-top: -3.5rem;
+    padding-bottom: 0.5rem;
+    &__h1{
+        @include h1;
+    }
+    &__h2{
+        @include h2;
+        }
+    &__bouton{
+        display: block;
+        margin: 3rem auto;
+        @include bouton; 
+        padding: 0 50px;
+    }
+}

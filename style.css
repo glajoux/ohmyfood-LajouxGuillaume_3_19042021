@@ -39,7 +39,7 @@
   height: 2.5rem;
   color: white;
   border-radius: 25px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin-bottom: 30px;
 }
 
@@ -209,6 +209,10 @@ body {
   margin: auto;
 }
 
+.fond {
+  position: relative;
+  z-index: -1;
+}
 .fond__img {
   object-fit: cover;
   width: 100%;
@@ -233,10 +237,14 @@ body {
 }
 .entree__description__note {
   font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entree__description__prix {
   font-weight: bold;
   text-align: right;
+  width: 20%;
 }
 
 .plat {
@@ -257,10 +265,14 @@ body {
 }
 .plat__description__note {
   font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat__description__prix {
   font-weight: bold;
   text-align: right;
+  width: 20%;
 }
 
 .dessert {
@@ -281,17 +293,21 @@ body {
 }
 .dessert__description__note {
   font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dessert__description__prix {
   font-weight: bold;
   text-align: right;
+  width: 20%;
 }
 
 .main {
   background-color: #F6F6F6;
-  position: relative;
-  top: -3rem;
   border-radius: 25px 25px 0 0;
+  margin-top: -3.5rem;
+  padding-bottom: 0.5rem;
 }
 .main__h1 {
   font-family: "Shrikhand";
@@ -318,13 +334,14 @@ body {
 }
 .main__bouton {
   display: block;
-  margin: auto;
+  margin: 3rem auto;
   background: linear-gradient(#FF79DA, #9256dc);
   border: none;
   height: 2.5rem;
   color: white;
   border-radius: 25px;
-  padding: 0 15px;
+  padding: 0 20px;
+  padding: 0 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
