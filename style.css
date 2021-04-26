@@ -78,7 +78,14 @@
   border-radius: 25px;
   padding: 0 20px;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s;
+  cursor: pointer;
   margin-bottom: 30px;
+}
+.localisation__button:hover {
+  transform: scale(1.1);
+  box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
 }
 
 .header {
@@ -510,16 +517,6 @@ body {
   margin: 0 auto;
   padding-top: 1.5rem;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main__h1 {
-    grid-area: h1;
-  }
-}
-@media (min-width: 1024px) {
-  .main__h1 {
-    grid-area: h1;
-  }
-}
 .main__h2 {
   text-transform: uppercase;
   font-weight: normal;
@@ -555,7 +552,14 @@ body {
   color: white;
   border-radius: 25px;
   padding: 0 20px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s;
   padding: 0 50px;
+}
+.main__bouton:hover {
+  transform: scale(1.1);
+  box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__bouton {
@@ -583,6 +587,42 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "h1 h1 h1" "h2_entree h2_plat h2_dessert" "entree1 plat1 dessert1" "entree2 plat2 dessert2" "entree3 plat3 dessert3" "entree4 . ." ". bouton .";
   }
+}
+
+.main__titre {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__titre {
+    grid-area: h1;
+  }
+}
+@media (min-width: 1024px) {
+  .main__titre {
+    grid-area: h1;
+  }
+}
+
+.main__titre__coeur {
+  position: relative;
+  top: 2rem;
+}
+.main__titre__coeur--hover {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#FF79DA, #9256dc);
+  background-clip: text;
+  color: transparent;
+}
+.main__titre__coeur--hover:hover {
+  animation: coeur-rempli 0.5s ease-in-out both;
 }
 
 /*# sourceMappingURL=style.css.map */

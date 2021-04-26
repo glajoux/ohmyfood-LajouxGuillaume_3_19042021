@@ -5,12 +5,6 @@
     padding-bottom: 0.5rem;
     &__h1{
         @include h1;
-        @media (min-width: 768px) and (max-width: 1023px){
-            grid-area: h1;
-        }
-        @media (min-width: 1024px){
-            grid-area: h1;
-        }
     }
     &__h2{
         @include h2;
