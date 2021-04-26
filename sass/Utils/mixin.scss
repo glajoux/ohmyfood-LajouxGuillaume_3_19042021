@@ -96,3 +96,7 @@
         }
     }
 }
+
+@mixin animation-coeur{
+    animation: coeur-rempli 0.5s ease-in-out both;
+}

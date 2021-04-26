@@ -16,6 +16,24 @@
     transform: translateY(0rem);
   }
 }
+@keyframes coeur-rempli {
+  0% {
+    transform: translate(-1rem -1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes coeur-vide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .localisation {
   background-color: whitesmoke;
   text-align: center;
@@ -217,6 +235,23 @@ body {
   top: 2rem;
   right: 3rem;
   font-size: 1.2rem;
+}
+.card__nom__coeur--hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9256dc);
+  background-clip: text;
+}
+.card__nom__coeur--hover:hover {
+  animation: coeur-rempli 0.5s ease-in-out both;
+}
+.card__nom__coeur--ghost:hover {
+  animation: coeur-vide 0.5s ease-in-out both;
 }
 .card__nom__titre {
   margin: 0.5rem;
