@@ -5,14 +5,65 @@
     padding-bottom: 0.5rem;
     &__h1{
         @include h1;
+        @media (min-width: 768px) and (max-width: 1023px){
+            grid-area: h1;
+        }
+        @media (min-width: 1024px){
+            grid-area: h1;
+        }
     }
     &__h2{
         @include h2;
+        @media (min-width: 768px) and (max-width: 1023px){
+            &__entree{
+                grid-area: h2_entree;
+            }
+            &__plat{
+                grid-area: h2_plat;
+            }
+            &__dessert{
+                grid-area: h2_dessert;
+            }
+        }
         }
     &__bouton{
         display: block;
         margin: 3rem auto;
         @include bouton; 
         padding: 0 50px;
+        @media (min-width: 768px) and (max-width: 1023px){
+            grid-area: bouton;
+        }
+        @media (min-width: 1024px){
+            grid-area: bouton;
+        }
     }
+    @media (min-width: 768px) and (max-width: 1023px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "h1 h1 h1"
+        "h2_entree h2_plat h2_dessert"
+        "entree1 plat1 dessert1"
+        "entree2 plat2 dessert2"
+        "entree3 plat3 dessert3"
+        "entree4 . ."
+        ". bouton ."
+    }
+    @media (min-width: 1024px){
+        max-width: 1200px;
+        margin: auto;
+        margin-top: -3.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "h1 h1 h1"
+        "h2_entree h2_plat h2_dessert"
+        "entree1 plat1 dessert1"
+        "entree2 plat2 dessert2"
+        "entree3 plat3 dessert3"
+        "entree4 . ."
+        ". bouton ."
+    }
+
 }

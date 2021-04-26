@@ -40,6 +40,21 @@
         margin-right: 1.5rem;
         color: darken($color-fond-dark, 40%);
     }
+    @media (min-width: 768px)and (max-width: 1023px){
+        width: 80%;
+    }
+    @media (min-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & h2{
+            width: 100%;
+        }
+        &--cadre{
+            width: 30%;
+        }
+    }
+
 }
 
 

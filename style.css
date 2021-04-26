@@ -135,6 +135,24 @@ body {
   margin-right: 1.5rem;
   color: #838383;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fonction {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .fonction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fonction h2 {
+    width: 100%;
+  }
+  .fonction--cadre {
+    width: 30%;
+  }
+}
 
 .restaurant {
   background-color: whitesmoke;
@@ -147,6 +165,19 @@ body {
 .restaurant__titre {
   width: 90%;
   margin: auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .restaurant {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card {
@@ -194,6 +225,16 @@ body {
   margin-top: 0;
   margin-left: 0.5rem;
   font-size: 0.9rem;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 22%;
+  }
 }
 
 .footer {
@@ -257,6 +298,9 @@ body {
 .entree__h2 {
   font-size: 1rem;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entree__description {
   display: flex;
@@ -282,6 +326,34 @@ body {
 .entree--3 {
   animation-delay: 0.5s;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .entree--1 {
+    grid-area: entree1;
+  }
+  .entree--2 {
+    grid-area: entree2;
+  }
+  .entree--3 {
+    grid-area: entree3;
+  }
+  .entree--4 {
+    grid-area: entree4;
+  }
+}
+@media (min-width: 1024px) {
+  .entree--1 {
+    grid-area: entree1;
+  }
+  .entree--2 {
+    grid-area: entree2;
+  }
+  .entree--3 {
+    grid-area: entree3;
+  }
+  .entree--4 {
+    grid-area: entree4;
+  }
+}
 
 .plat {
   width: 90%;
@@ -296,6 +368,9 @@ body {
 .plat__h2 {
   font-size: 1rem;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat__description {
   display: flex;
@@ -321,6 +396,28 @@ body {
 .plat--3 {
   animation-delay: 0.5s;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .plat--1 {
+    grid-area: plat1;
+  }
+  .plat--2 {
+    grid-area: plat2;
+  }
+  .plat--3 {
+    grid-area: plat3;
+  }
+}
+@media (min-width: 1024px) {
+  .plat--1 {
+    grid-area: plat1;
+  }
+  .plat--2 {
+    grid-area: plat2;
+  }
+  .plat--3 {
+    grid-area: plat3;
+  }
+}
 
 .dessert {
   width: 90%;
@@ -335,6 +432,9 @@ body {
 .dessert__h2 {
   font-size: 1rem;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dessert__description {
   display: flex;
@@ -375,6 +475,16 @@ body {
   margin: 0 auto;
   padding-top: 1.5rem;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__h1 {
+    grid-area: h1;
+  }
+}
+@media (min-width: 1024px) {
+  .main__h1 {
+    grid-area: h1;
+  }
+}
 .main__h2 {
   text-transform: uppercase;
   font-weight: normal;
@@ -390,6 +500,17 @@ body {
   border-bottom: 2px solid #99e2d0;
   padding-top: 1px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__h2__entree {
+    grid-area: h2_entree;
+  }
+  .main__h2__plat {
+    grid-area: h2_plat;
+  }
+  .main__h2__dessert {
+    grid-area: h2_dessert;
+  }
+}
 .main__bouton {
   display: block;
   margin: 3rem auto;
@@ -400,6 +521,33 @@ body {
   border-radius: 25px;
   padding: 0 20px;
   padding: 0 50px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__bouton {
+    grid-area: bouton;
+  }
+}
+@media (min-width: 1024px) {
+  .main__bouton {
+    grid-area: bouton;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h1 h1 h1" "h2_entree h2_plat h2_dessert" "entree1 plat1 dessert1" "entree2 plat2 dessert2" "entree3 plat3 dessert3" "entree4 . ." ". bouton .";
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: -3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h1 h1 h1" "h2_entree h2_plat h2_dessert" "entree1 plat1 dessert1" "entree2 plat2 dessert2" "entree3 plat3 dessert3" "entree4 . ." ". bouton .";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

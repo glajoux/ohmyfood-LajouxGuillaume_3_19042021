@@ -1,11 +1,63 @@
 .entree{
     @include plat;
     @include animation-menu;
+    @media (min-width: 768px) and (max-width: 1023px){
+        &--1{
+            grid-area: entree1;
+        }
+        &--2{
+            grid-area: entree2;
+        }
+        &--3{
+            grid-area: entree3;
+        }
+        &--4{
+            grid-area: entree4;
+        }
+    }
+    @media (min-width: 1024px){
+        &--1{
+            grid-area: entree1;
+        }
+        &--2{
+            grid-area: entree2;
+        }
+        &--3{
+            grid-area: entree3;
+        }
+        &--4{
+            grid-area: entree4;
+        }
+    }
+
 }
 
 .plat{
     @include plat;
     @include animation-menu;
+    @media (min-width: 768px) and (max-width: 1023px){
+        &--1{
+            grid-area: plat1;
+        }
+        &--2{
+            grid-area: plat2;
+        }
+        &--3{
+            grid-area: plat3;
+        }
+    }
+    @media (min-width: 1024px){
+        &--1{
+            grid-area: plat1;
+        }
+        &--2{
+            grid-area: plat2;
+        }
+        &--3{
+            grid-area: plat3;
+        }
+    }
+
 }
 
 .dessert{

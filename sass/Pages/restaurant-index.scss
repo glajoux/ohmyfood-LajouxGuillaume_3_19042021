@@ -9,6 +9,15 @@
         width: 90%;
         margin: auto;
     }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .card{
@@ -55,5 +64,11 @@
             margin-left: 0.5rem;
             font-size: 0.9rem;
         }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 45%;
+    }
+    @media (min-width: 1024px){
+        width: 22%;
     }
 }
