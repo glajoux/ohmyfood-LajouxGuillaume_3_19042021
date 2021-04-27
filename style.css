@@ -608,9 +608,9 @@ body {
     grid-area: h1;
   }
 }
-
 .main__titre__coeur {
   position: relative;
+  cursor: pointer;
   top: 2rem;
 }
 .main__titre__coeur--hover {
