@@ -1,6 +1,20 @@
 .entree{
     @include plat;
     @include animation-menu;
+    &:hover > .entree__prix{
+        animation: check 0.5s ease-in-out both;
+        z-index: 5;
+    }
+    &:hover > .entree__check{
+        animation: check 0.5s ease-in-out both;
+        z-index: 5;
+        & > .entree__circle{
+        animation: rotate 0.8s;
+        }
+    }
+    &:hover > .entree__description{
+        animation: description 0.5s ease-in-out both;
+    }
     @media (min-width: 768px) and (max-width: 1023px){
         &--1{
             grid-area: entree1;
@@ -35,6 +49,20 @@
 .plat{
     @include plat;
     @include animation-menu;
+    &:hover > .plat__prix{
+        animation: check 0.5s ease-in-out both;
+        z-index: 5;
+    }
+    &:hover > .plat__check{
+        animation: check 0.5s ease-in-out both;
+        z-index: 5;
+        & > .plat__circle{
+        animation: rotate 0.8s;
+        }
+    }
+    &:hover > .plat__description{
+        animation: description 0.5s ease-in-out both;
+    }
     @media (min-width: 768px) and (max-width: 1023px){
         &--1{
             grid-area: plat1;
@@ -63,6 +91,20 @@
 .dessert{
     @include plat;
     @include animation-menu;
+    &:hover > .dessert__prix{
+        animation: check 0.4s ease-in-out both;
+        z-index: 5;
+    }
+    &:hover > .dessert__check{
+        animation: check 0.5s ease-in-out both;
+        z-index: 5;
+        & > .dessert__circle{
+        animation: rotate 0.8s;
+        }
+    }
+    &:hover > .dessert__description{
+        animation: description 0.5s ease-in-out both;
+    }
 }
 
 
