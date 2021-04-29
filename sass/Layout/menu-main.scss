@@ -8,41 +8,17 @@
     }
     &__h2{
         @include h2;
-        @media (min-width: 768px) and (max-width: 1023px){
-            &__entree{
-                grid-area: h2_entree;
-            }
-            &__plat{
-                grid-area: h2_plat;
-            }
-            &__dessert{
-                grid-area: h2_dessert;
-            }
-        }
         }
     &__bouton{
         display: block;
         margin: 3rem auto;
         @include bouton; 
         padding: 0 50px;
-        @media (min-width: 768px) and (max-width: 1023px){
-            grid-area: bouton;
-        }
-        @media (min-width: 1024px){
-            grid-area: bouton;
-        }
     }
     @media (min-width: 768px) and (max-width: 1023px){
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "h1 h1 h1"
-        "h2_entree h2_plat h2_dessert"
-        "entree1 plat1 dessert1"
-        "entree2 plat2 dessert2"
-        "entree3 plat3 dessert3"
-        "entree4 . ."
-        ". bouton ."
+        width: 70%;
+        margin: auto;
+        margin-top: -3.5rem;
     }
     @media (min-width: 1024px){
         max-width: 1200px;
@@ -57,22 +33,18 @@
         "entree2 plat2 dessert2"
         "entree3 plat3 dessert3"
         "entree4 . ."
-        ". bouton ."
+        ". bouton .";
+        &__bouton{
+            grid-area: bouton;
+        }
     }
 }
-
 
 .main__titre{
     display: flex;
     width: 90%;
     justify-content: space-between;
     margin: auto;
-    @media (min-width: 768px) and (max-width: 1023px){
-        grid-area: h1;
-    }
-    @media (min-width: 1024px){
-        grid-area: h1;
-    }
     &__coeur{
         position: relative;
         cursor: pointer;
@@ -85,12 +57,33 @@
             bottom: 0;
             left: 0;
             background: linear-gradient($color-sec, $color-prim);
-            background-clip: text;
+            -webkit-background-clip: text;
+                    background-clip: text;
             color: transparent;
-            &:hover{
-                animation: coeur-rempli 0.5s ease-in-out both;
+            &:active{
+                animation: coeur-rempli 0.5s ease-in-out both;        
+            }            
+        }
+        &--ghost{
+            &:active{
+                animation: coeur-vide 0.5s ease-in-out both;
             }
         }
+    }
+    @media (min-width: 1024px){
+        grid-area: h1;
+        &__coeur{
+            &--hover{
+                &:hover{
+                    @include animation-coeur;
+                }
+            }
+            &--ghost{
+                &:hover{
+                    animation: coeur-vide 0.5s ease-in-out both;
+                }
+            }
+        }        
     }
 }
 
