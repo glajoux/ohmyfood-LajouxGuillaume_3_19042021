@@ -13,7 +13,7 @@
         display: flex;
         position: relative;
         z-index: 1;
-        &:hover{
+        &:active{
             & .fonction__icone{
                 color: $color-prim;
             }
@@ -55,9 +55,17 @@
         }
         &--cadre{
             width: 30%;
+            &:hover{
+                & .fonction__icone{
+                    color: $color-prim;
+                }
+                &::before{
+                    opacity: 1;
+                    @include shadow-box-hover;
+                }
+            }    
         }
     }
-
 }
 
 

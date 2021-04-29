@@ -8,10 +8,17 @@
     cursor: pointer;
     transform: scale(1);
     transition: 0.3s;
-    &:hover{
+    &:active{
         transform: scale(1.1);
         opacity: 0.8;
         @include shadow-box-hover;
+    }
+    @media (min-width: 1024px){
+        &:hover{
+            transform: scale(1.1);
+            opacity: 0.8;
+            @include shadow-box-hover;
+        }   
     }
 }
 
