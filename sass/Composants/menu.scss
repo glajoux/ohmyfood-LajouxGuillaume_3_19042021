@@ -2,7 +2,7 @@
     @include plat;
     @include animation-menu;
     &:hover > .entree__prix{
-        animation: check 0.5s ease-in-out both;
+        animation: decale 0.5s ease-in-out both;
         z-index: 5;
     }
     &:hover > .entree__check{
@@ -50,7 +50,7 @@
     @include plat;
     @include animation-menu;
     &:hover > .plat__prix{
-        animation: check 0.5s ease-in-out both;
+        animation: decale 0.5s ease-in-out both;
         z-index: 5;
     }
     &:hover > .plat__check{
@@ -92,7 +92,7 @@
     @include plat;
     @include animation-menu;
     &:hover > .dessert__prix{
-        animation: check 0.4s ease-in-out both;
+        animation: decale 0.4s ease-in-out both;
         z-index: 5;
     }
     &:hover > .dessert__check{
