@@ -65,7 +65,7 @@
                 color: transparent;
                 background: linear-gradient($color-sec, $color-prim);
                 -webkit-background-clip: text;
-                        background-clip: text;
+                -moz-background-clip: text;
                 &:active{
                     @include animation-coeur;
                 }
