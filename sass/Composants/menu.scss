@@ -1,18 +1,18 @@
 .entree{
     @include plat;
     @include animation-menu;
-    &:hover > .entree__prix{
+    &:active > .entree__prix{
         animation: decale 0.5s ease-in-out both;
         z-index: 5;
     }
-    &:hover > .entree__check{
+    &:active > .entree__check{
         animation: check 0.5s ease-in-out both;
         z-index: 5;
         & > .entree__circle{
         animation: rotate 0.8s;
         }
     }
-    &:hover > .entree__description{
+    &:active > .entree__description{
         animation: description 0.5s ease-in-out both;
     }
     @media (min-width: 768px) and (max-width: 1023px){
@@ -42,6 +42,21 @@
         &--4{
             grid-area: entree4;
         }
+        &:hover > .entree__prix{
+            animation: decale 0.5s ease-in-out both;
+            z-index: 5;
+        }
+        &:hover > .entree__check{
+            animation: check 0.5s ease-in-out both;
+            z-index: 5;
+            & > .entree__circle{
+            animation: rotate 0.8s;
+            }
+        }
+        &:hover > .entree__description{
+            animation: description 0.5s ease-in-out both;
+        }
+    
     }
 
 }
@@ -49,18 +64,18 @@
 .plat{
     @include plat;
     @include animation-menu;
-    &:hover > .plat__prix{
+    &:active > .plat__prix{
         animation: decale 0.5s ease-in-out both;
         z-index: 5;
     }
-    &:hover > .plat__check{
+    &:active > .plat__check{
         animation: check 0.5s ease-in-out both;
         z-index: 5;
         & > .plat__circle{
         animation: rotate 0.8s;
         }
     }
-    &:hover > .plat__description{
+    &:active > .plat__description{
         animation: description 0.5s ease-in-out both;
     }
     @media (min-width: 768px) and (max-width: 1023px){
@@ -84,6 +99,20 @@
         &--3{
             grid-area: plat3;
         }
+        &:hover > .plat__prix{
+            animation: decale 0.5s ease-in-out both;
+            z-index: 5;
+        }
+        &:hover > .plat__check{
+            animation: check 0.5s ease-in-out both;
+            z-index: 5;
+            & > .plat__circle{
+            animation: rotate 0.8s;
+            }
+        }
+        &:hover > .plat__description{
+            animation: description 0.5s ease-in-out both;
+        }    
     }
 
 }
@@ -91,20 +120,36 @@
 .dessert{
     @include plat;
     @include animation-menu;
-    &:hover > .dessert__prix{
+    &:active > .dessert__prix{
         animation: decale 0.4s ease-in-out both;
         z-index: 5;
     }
-    &:hover > .dessert__check{
+    &:active > .dessert__check{
         animation: check 0.5s ease-in-out both;
         z-index: 5;
         & > .dessert__circle{
         animation: rotate 0.8s;
         }
     }
-    &:hover > .dessert__description{
+    &:active > .dessert__description{
         animation: description 0.5s ease-in-out both;
     }
+    @media (min-width: 1024px){
+        &:hover > .dessert__prix{
+            animation: decale 0.4s ease-in-out both;
+            z-index: 5;
+        }
+        &:hover > .dessert__check{
+            animation: check 0.5s ease-in-out both;
+            z-index: 5;
+            & > .dessert__circle{
+            animation: rotate 0.8s;
+            }
+        }
+        &:hover > .dessert__description{
+            animation: description 0.5s ease-in-out both;
+        }
+    }    
 }
 
 
