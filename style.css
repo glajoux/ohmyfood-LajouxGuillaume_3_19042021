@@ -179,10 +179,17 @@
   cursor: pointer;
   margin-bottom: 30px;
 }
-.localisation__button:hover {
+.localisation__button:active {
   transform: scale(1.1);
   opacity: 0.8;
   box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
+}
+@media (min-width: 1024px) {
+  .localisation__button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
+  }
 }
 
 .header {
@@ -228,10 +235,10 @@ body {
   position: relative;
   z-index: 1;
 }
-.fonction--cadre:hover .fonction__icone {
+.fonction--cadre:active .fonction__icone {
   color: #9256dc;
 }
-.fonction--cadre:hover::before {
+.fonction--cadre:active::before {
   opacity: 1;
   box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
 }
@@ -277,6 +284,13 @@ body {
   }
   .fonction--cadre {
     width: 30%;
+  }
+  .fonction--cadre:hover .fonction__icone {
+    color: #9256dc;
+  }
+  .fonction--cadre:hover::before {
+    opacity: 1;
+    box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
   }
 }
 
@@ -796,10 +810,17 @@ body {
   transition: 0.3s;
   padding: 0 50px;
 }
-.main__bouton:hover {
+.main__bouton:active {
   transform: scale(1.1);
   opacity: 0.8;
   box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
+}
+@media (min-width: 1024px) {
+  .main__bouton:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .main {
