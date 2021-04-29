@@ -46,7 +46,7 @@
   0% {
     transform: scaleX(0);
     transform-origin: right center;
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: scaleX(1);
@@ -486,6 +486,7 @@ body {
   color: #fff;
   border-radius: 0 15px 15px 0;
   z-index: -5;
+  opacity: 0;
 }
 .entree--1 {
   animation-delay: 0.125s;
@@ -593,6 +594,7 @@ body {
   color: #fff;
   border-radius: 0 15px 15px 0;
   z-index: -5;
+  opacity: 0;
 }
 .plat--1 {
   animation-delay: 0.125s;
@@ -697,6 +699,7 @@ body {
   color: #fff;
   border-radius: 0 15px 15px 0;
   z-index: -5;
+  opacity: 0;
 }
 .dessert--1 {
   animation-delay: 0.125s;
