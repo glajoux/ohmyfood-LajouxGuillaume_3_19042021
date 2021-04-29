@@ -493,18 +493,18 @@ body {
 .entree--4 {
   animation-delay: 0.5s;
 }
-.entree:hover > .entree__prix {
+.entree:active > .entree__prix {
   animation: decale 0.5s ease-in-out both;
   z-index: 5;
 }
-.entree:hover > .entree__check {
+.entree:active > .entree__check {
   animation: check 0.5s ease-in-out both;
   z-index: 5;
 }
-.entree:hover > .entree__check > .entree__circle {
+.entree:active > .entree__check > .entree__circle {
   animation: rotate 0.8s;
 }
-.entree:hover > .entree__description {
+.entree:active > .entree__description {
   animation: description 0.5s ease-in-out both;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -533,6 +533,20 @@ body {
   }
   .entree--4 {
     grid-area: entree4;
+  }
+  .entree:hover > .entree__prix {
+    animation: decale 0.5s ease-in-out both;
+    z-index: 5;
+  }
+  .entree:hover > .entree__check {
+    animation: check 0.5s ease-in-out both;
+    z-index: 5;
+  }
+  .entree:hover > .entree__check > .entree__circle {
+    animation: rotate 0.8s;
+  }
+  .entree:hover > .entree__description {
+    animation: description 0.5s ease-in-out both;
   }
 }
 
@@ -600,18 +614,18 @@ body {
 .plat--4 {
   animation-delay: 0.5s;
 }
-.plat:hover > .plat__prix {
+.plat:active > .plat__prix {
   animation: decale 0.5s ease-in-out both;
   z-index: 5;
 }
-.plat:hover > .plat__check {
+.plat:active > .plat__check {
   animation: check 0.5s ease-in-out both;
   z-index: 5;
 }
-.plat:hover > .plat__check > .plat__circle {
+.plat:active > .plat__check > .plat__circle {
   animation: rotate 0.8s;
 }
-.plat:hover > .plat__description {
+.plat:active > .plat__description {
   animation: description 0.5s ease-in-out both;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -634,6 +648,20 @@ body {
   }
   .plat--3 {
     grid-area: plat3;
+  }
+  .plat:hover > .plat__prix {
+    animation: decale 0.5s ease-in-out both;
+    z-index: 5;
+  }
+  .plat:hover > .plat__check {
+    animation: check 0.5s ease-in-out both;
+    z-index: 5;
+  }
+  .plat:hover > .plat__check > .plat__circle {
+    animation: rotate 0.8s;
+  }
+  .plat:hover > .plat__description {
+    animation: description 0.5s ease-in-out both;
   }
 }
 
@@ -701,19 +729,35 @@ body {
 .dessert--4 {
   animation-delay: 0.5s;
 }
-.dessert:hover > .dessert__prix {
+.dessert:active > .dessert__prix {
   animation: decale 0.4s ease-in-out both;
   z-index: 5;
 }
-.dessert:hover > .dessert__check {
+.dessert:active > .dessert__check {
   animation: check 0.5s ease-in-out both;
   z-index: 5;
 }
-.dessert:hover > .dessert__check > .dessert__circle {
+.dessert:active > .dessert__check > .dessert__circle {
   animation: rotate 0.8s;
 }
-.dessert:hover > .dessert__description {
+.dessert:active > .dessert__description {
   animation: description 0.5s ease-in-out both;
+}
+@media (min-width: 1024px) {
+  .dessert:hover > .dessert__prix {
+    animation: decale 0.4s ease-in-out both;
+    z-index: 5;
+  }
+  .dessert:hover > .dessert__check {
+    animation: check 0.5s ease-in-out both;
+    z-index: 5;
+  }
+  .dessert:hover > .dessert__check > .dessert__circle {
+    animation: rotate 0.8s;
+  }
+  .dessert:hover > .dessert__description {
+    animation: description 0.5s ease-in-out both;
+  }
 }
 
 .main {
