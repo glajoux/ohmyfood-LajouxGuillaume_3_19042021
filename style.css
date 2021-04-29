@@ -192,6 +192,7 @@
   font-family: "Shrikhand";
   margin: auto;
   position: relative;
+  font-size: 1.8rem;
 }
 .header__fleche {
   font-size: 1rem;
@@ -353,7 +354,7 @@ body {
   color: transparent;
   background: linear-gradient(#FF79DA, #9256dc);
   -webkit-background-clip: text;
-  background-clip: text;
+  -moz-background-clip: text;
 }
 .card__nom__coeur--hover:active {
   animation: coeur-rempli 0.5s ease-in-out both;
@@ -838,7 +839,7 @@ body {
   left: 0;
   background: linear-gradient(#FF79DA, #9256dc);
   -webkit-background-clip: text;
-  background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
 }
 .main__titre__coeur--hover:active {
