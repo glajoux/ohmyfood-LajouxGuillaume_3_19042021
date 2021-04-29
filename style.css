@@ -18,11 +18,9 @@
 }
 @keyframes coeur-rempli {
   0% {
-    transform: translate(-1rem -1rem);
     opacity: 0;
   }
   100% {
-    transform: translate(0);
     opacity: 1;
   }
 }
@@ -354,12 +352,13 @@ body {
   opacity: 0;
   color: transparent;
   background: linear-gradient(#FF79DA, #9256dc);
+  -webkit-background-clip: text;
   background-clip: text;
 }
-.card__nom__coeur--hover:hover {
+.card__nom__coeur--hover:active {
   animation: coeur-rempli 0.5s ease-in-out both;
 }
-.card__nom__coeur--ghost:hover {
+.card__nom__coeur--ghost:active {
   animation: coeur-vide 0.5s ease-in-out both;
 }
 .card__nom__titre {
@@ -378,6 +377,12 @@ body {
 @media (min-width: 1024px) {
   .card {
     width: 22%;
+  }
+  .card__nom__coeur--hover:hover {
+    animation: coeur-rempli 0.5s ease-in-out both;
+  }
+  .card__nom__coeur--ghost:hover {
+    animation: coeur-vide 0.5s ease-in-out both;
   }
 }
 
@@ -507,20 +512,6 @@ body {
 .entree:active > .entree__description {
   animation: description 0.5s ease-in-out both;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .entree--1 {
-    grid-area: entree1;
-  }
-  .entree--2 {
-    grid-area: entree2;
-  }
-  .entree--3 {
-    grid-area: entree3;
-  }
-  .entree--4 {
-    grid-area: entree4;
-  }
-}
 @media (min-width: 1024px) {
   .entree--1 {
     grid-area: entree1;
@@ -628,17 +619,6 @@ body {
 .plat:active > .plat__description {
   animation: description 0.5s ease-in-out both;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .plat--1 {
-    grid-area: plat1;
-  }
-  .plat--2 {
-    grid-area: plat2;
-  }
-  .plat--3 {
-    grid-area: plat3;
-  }
-}
 @media (min-width: 1024px) {
   .plat--1 {
     grid-area: plat1;
@@ -744,6 +724,15 @@ body {
   animation: description 0.5s ease-in-out both;
 }
 @media (min-width: 1024px) {
+  .dessert--1 {
+    grid-area: dessert1;
+  }
+  .dessert--2 {
+    grid-area: dessert2;
+  }
+  .dessert--3 {
+    grid-area: dessert3;
+  }
   .dessert:hover > .dessert__prix {
     animation: decale 0.4s ease-in-out both;
     z-index: 5;
@@ -789,17 +778,6 @@ body {
   border-bottom: 2px solid #99e2d0;
   padding-top: 1px;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main__h2__entree {
-    grid-area: h2_entree;
-  }
-  .main__h2__plat {
-    grid-area: h2_plat;
-  }
-  .main__h2__dessert {
-    grid-area: h2_dessert;
-  }
-}
 .main__bouton {
   display: block;
   margin: 3rem auto;
@@ -820,20 +798,10 @@ body {
   box-shadow: -2px -2px 2px 1px #e9e9e9, 2px -2px 2px 1px #e9e9e9, 2px 2px 2px 1px #e9e9e9, -2px 2px 2px 1px #e9e9e9;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main__bouton {
-    grid-area: bouton;
-  }
-}
-@media (min-width: 1024px) {
-  .main__bouton {
-    grid-area: bouton;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
   .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "h1 h1 h1" "h2_entree h2_plat h2_dessert" "entree1 plat1 dessert1" "entree2 plat2 dessert2" "entree3 plat3 dessert3" "entree4 . ." ". bouton .";
+    width: 70%;
+    margin: auto;
+    margin-top: -3.5rem;
   }
 }
 @media (min-width: 1024px) {
@@ -845,6 +813,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "h1 h1 h1" "h2_entree h2_plat h2_dessert" "entree1 plat1 dessert1" "entree2 plat2 dessert2" "entree3 plat3 dessert3" "entree4 . ." ". bouton .";
   }
+  .main__bouton {
+    grid-area: bouton;
+  }
 }
 
 .main__titre {
@@ -852,16 +823,6 @@ body {
   width: 90%;
   justify-content: space-between;
   margin: auto;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .main__titre {
-    grid-area: h1;
-  }
-}
-@media (min-width: 1024px) {
-  .main__titre {
-    grid-area: h1;
-  }
 }
 .main__titre__coeur {
   position: relative;
@@ -876,11 +837,26 @@ body {
   bottom: 0;
   left: 0;
   background: linear-gradient(#FF79DA, #9256dc);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.main__titre__coeur--hover:hover {
+.main__titre__coeur--hover:active {
   animation: coeur-rempli 0.5s ease-in-out both;
+}
+.main__titre__coeur--ghost:active {
+  animation: coeur-vide 0.5s ease-in-out both;
+}
+@media (min-width: 1024px) {
+  .main__titre {
+    grid-area: h1;
+  }
+  .main__titre__coeur--hover:hover {
+    animation: coeur-rempli 0.5s ease-in-out both;
+  }
+  .main__titre__coeur--ghost:hover {
+    animation: coeur-vide 0.5s ease-in-out both;
+  }
 }
 
 .load {

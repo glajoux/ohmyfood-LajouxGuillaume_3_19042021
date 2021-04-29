@@ -64,13 +64,14 @@
                 opacity: 0;
                 color: transparent;
                 background: linear-gradient($color-sec, $color-prim);
-                background-clip: text;
-                &:hover{
+                -webkit-background-clip: text;
+                        background-clip: text;
+                &:active{
                     @include animation-coeur;
                 }
             }
             &--ghost{
-                &:hover{
+                &:active{
                     animation: coeur-vide 0.5s ease-in-out both;
                 }
             }
@@ -89,5 +90,19 @@
     }
     @media (min-width: 1024px){
         width: 22%;
+        &__nom{
+            &__coeur{
+                &--hover{
+                    &:hover{
+                        @include animation-coeur;
+                    }
+                }
+                &--ghost{
+                    &:hover{
+                        animation: coeur-vide 0.5s ease-in-out both;
+                    }
+                }
+            }
+        }
     }
 }
