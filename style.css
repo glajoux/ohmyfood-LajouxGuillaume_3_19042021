@@ -448,6 +448,11 @@ body {
   width: 100%;
   height: 250px;
 }
+@media (min-width: 1024px) {
+  .fond__img {
+    height: 350px;
+  }
+}
 
 .entree {
   display: flex;
@@ -835,7 +840,7 @@ body {
     margin: auto;
     margin-top: -3.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
     grid-template-areas: "h1 h1 h1" "h2_entree h2_plat h2_dessert" "entree1 plat1 dessert1" "entree2 plat2 dessert2" "entree3 plat3 dessert3" "entree4 . ." ". bouton .";
   }
   .main__bouton {
@@ -896,8 +901,8 @@ body {
   animation: disparait 1.5s both 2;
 }
 .load__circle {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   position: relative;
   top: 50%;
