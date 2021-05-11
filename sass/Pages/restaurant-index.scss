@@ -70,11 +70,6 @@
                     @include animation-coeur;
                 }
             }
-            &--ghost{
-                &:active{
-                    animation: coeur-vide 0.5s ease-in-out both;
-                }
-            }
         }
         &__titre{
             margin: 0.5rem;

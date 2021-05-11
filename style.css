@@ -24,14 +24,6 @@
     opacity: 1;
   }
 }
-@keyframes coeur-vide {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes decale {
   0% {
     transform: translateX(4rem);
@@ -372,9 +364,6 @@ body {
 }
 .card__nom__coeur--hover:active {
   animation: coeur-rempli 0.5s ease-in-out both;
-}
-.card__nom__coeur--ghost:active {
-  animation: coeur-vide 0.5s ease-in-out both;
 }
 .card__nom__titre {
   margin: 0.5rem;
