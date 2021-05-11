@@ -58,6 +58,7 @@
     margin-bottom: 20px;
     @include shadow-box; 
     font-family: $font-text;
+    cursor: pointer;
     &__description{
         display: flex;
         width: 65%;

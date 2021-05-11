@@ -460,6 +460,7 @@ body {
   margin-bottom: 20px;
   box-shadow: -2px -2px 2px 0px #e9e9e9, 2px -2px 2px 0px #e9e9e9, 2px 2px 2px 0px #e9e9e9, -2px 2px 2px 0px #e9e9e9;
   font-family: "Roboto";
+  cursor: pointer;
   animation: menu 0.5s ease-in-out backwards;
 }
 .entree__description {
@@ -568,6 +569,7 @@ body {
   margin-bottom: 20px;
   box-shadow: -2px -2px 2px 0px #e9e9e9, 2px -2px 2px 0px #e9e9e9, 2px 2px 2px 0px #e9e9e9, -2px 2px 2px 0px #e9e9e9;
   font-family: "Roboto";
+  cursor: pointer;
   animation: menu 0.5s ease-in-out backwards;
 }
 .plat__description {
@@ -673,6 +675,7 @@ body {
   margin-bottom: 20px;
   box-shadow: -2px -2px 2px 0px #e9e9e9, 2px -2px 2px 0px #e9e9e9, 2px 2px 2px 0px #e9e9e9, -2px 2px 2px 0px #e9e9e9;
   font-family: "Roboto";
+  cursor: pointer;
   animation: menu 0.5s ease-in-out backwards;
 }
 .dessert__description {
